@@ -1,1 +1,0 @@
-Eu sou um novo arquivo depois do vinculo do meu repositório local com o remoto
