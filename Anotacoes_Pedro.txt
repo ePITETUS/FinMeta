@@ -1,0 +1,17 @@
+Home/Painel Principal OK OK
+Movimentações OK OK
+Planejamentos(Orçamento Mensal) OK OK
+Objetivos/Metas OK
+Contas OK
+Cartões de Crédito OK
+Faturas de cartão OK
+Despesas fixas (Contas) OK
+Empréstimos OK
+Receitas/Fontes de Renda OK
+Ativos OK
+Dependentes OK
+Calendário (para se programar com gastos) OK
+Tipos de Obrigação OK
+Tipos de gastos (Disperdício) OK
+Relatórios OK
+Configurações e Perfil OK

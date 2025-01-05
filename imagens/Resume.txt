@@ -1,0 +1,2 @@
+Pasta destinada a abrigar as imagens do código
+Visa facilitar o acesso a arquivos de imagem em geral

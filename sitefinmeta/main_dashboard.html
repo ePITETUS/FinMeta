@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinMeta - Controle Financeiro</title>
+    <link rel="stylesheet" href="main_dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Imagens/ilustração.png.jpeg" alt="Logo FinMeta" class="logo-img">
+                <span class="logo-text"> </span>
+            </div>
+            <ul>
+                <li><a href="#">Rendas</a></li>
+                <li><a href="#">Gastos</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contas</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--A tabela de dados-->
+        <div class="container">
+            <div class="table-container">
+                <table id="tabelaDados">
+                    <thead>
+                    <tr>
+                    <th>Categoria</th>
+                    <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Linhas preenchidas pelo JS -->
+                </tbody>
+                </table>
+            </div>
+            <!--O gráfico-->
+            <div class="graphics">
+                <h1>Gasto mensal</h1>
+                <div class="pie-chart"></div>
+                <!-- Inclusão do arquivo de requisição -->
+                <script src="Basis/AJAX.js"></script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FinMeta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

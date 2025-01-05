@@ -1,0 +1,22 @@
+#testimonals {
+    min-height: calc(100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+}
+#testimonals_logofin {
+    width: 1500px;
+    height: auto;
+}
+#testimonals .section-subtitle {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    padding: 0 40px;
+}
+#testimonals_content {
+    width: 59%;
+}

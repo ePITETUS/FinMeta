@@ -1,0 +1,2 @@
+Pasta destinada a dispor todos os arquivos de front end
+Incluindo HTML, CSS e eventualmente recursos JavaScript (exceto APIs)

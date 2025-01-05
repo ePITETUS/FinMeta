@@ -1,0 +1,121 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+#cta .title {
+    font-size: 4rem;
+    color: black;
+}
+#cta .title span {
+    color:#0a0046
+}
+#cta .description {
+    font-size: 1.1rem;
+}
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: rgb(255, 255, 255);
+    background: #ad5389;
+    background: linear-gradient(
+      40deg,
+      rgb(2, 23, 95) 0%,
+      rgb(20, 63, 207) 100%
+    );
+    border: none;
+    box-shadow: 10 1.9em 1.9em -0.9em #11c2ee98;
+    letter-spacing: 0.08em;
+    border-radius: 30em;
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 50px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #11c2ee98;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #11c2ee98;
+  }
+  
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 100%;
+    z-index: 2;
+}
+#banner img {
+    height: 80%;
+    width: fit-content;
+}
+
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #1933c7;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #1933c7;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
