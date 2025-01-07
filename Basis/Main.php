@@ -4,6 +4,12 @@ include "config.php";
 include 'comandos_sql.php';
 include 'consulta_sql.php';
 
+  function valida_cpf($cpf){
+    for ($i = 10;$i >= 0;$i--){
+      
+    }
+  }
+
  // SAI DA SEÇÃO
  if(isset($_GET['sair'])){
   session_start();
