@@ -4,9 +4,16 @@ include "config.php";
 include 'comandos_sql.php';
 include 'consulta_sql.php';
 
+  // FUNCTION PARA VALIDAR CPF
   function valida_cpf($cpf){
-    for ($i = 10;$i >= 0;$i--){
-      
+    // Valida se o CPF tem todos os caracteres
+    if (strlen($cpf)!=11){
+      return 'CPF com tamanho inválido';
+    }
+
+    // Cálculo de CPF
+    for ($i = 10,$m = 0;$i >= 0;$i--,$m++){
+      $result+=$cpf[$i]*
     }
   }
 
