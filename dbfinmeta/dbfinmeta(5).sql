@@ -65,6 +65,7 @@ CREATE TABLE Movimentacao (
   vlrMovimentacao FLOAT(12) NULL,
   dthRegistro DATETIME NULL,
   dthMovimentacao DATETIME NULL,
+  fAtivo bit (1) NOT NULL,
   PRIMARY KEY(idMovimentacao),
   INDEX Movimentacoes_FKIndex1(idObrigacao),
   INDEX Movimentacoes_FKIndex2(idAtivo),

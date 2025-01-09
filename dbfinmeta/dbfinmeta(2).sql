@@ -79,11 +79,17 @@ CREATE TABLE TipoObrigacao (
   idTipoObrigacao INTEGER(4) UNSIGNED NOT NULL AUTO_INCREMENT,
   idUsuarioTitular INTEGER(4) UNSIGNED NOT NULL,
   nmTipoObrigacao VARCHAR(15) NULL,
+  idCaraterMovimentacao INTEGER(4) UNSIGNED NOT NULL,
   fAtivo BIT NULL,
   PRIMARY KEY(idTipoObrigacao),
   INDEX TipoObrigacao_FKIndex1(idUsuarioTitular),
+  INDEX TipoObrigacao_FKIndex2(idCaraterMovimentacao),
   FOREIGN KEY(idUsuarioTitular)
     REFERENCES UsuarioTitular(idUsuarioTitular)
+      ON DELETE NO ACTION
+      ON UPDATE NO ACTION,
+  FOREIGN KEY(idCaraterMovimentacao)
+    REFERENCES CaraterMovimentacao(idCaraterMovimentacao)
       ON DELETE NO ACTION
       ON UPDATE NO ACTION
 );
