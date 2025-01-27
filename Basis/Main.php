@@ -12,36 +12,36 @@ if(isset($_GET['sair'])){
   header("location: ../sitefinmeta/login.php");
 };
 
-  // FUNCTION PARA VALIDAR CPF
-  function valida_cpf($cpf){
-    // Valida se o CPF tem todos os caracteres
-    if (strlen($cpf)!=11){
-      return 'CPF com tamanho inválido';
-    }
-
-    // Cálculo de CPF
-    // $qntd é a quantidade de carcacteres do CPF que serão validados
-    // $valid é o resultado do cálculo para a validação
-    // $posi é a posição do carcacteres do CPF que será incluído no cálculo
-    // $multi é o valor que está sendo multiplicado pelo carcacter do CPF incluído
-    for($qntd = 10;$qntd<=11;$qntd++){
-
-      for ($valid=0,$multi = $qntd,$posi = 0;$multi > 1 ;$multi--,$posi++){
-
-        $valid += $cpf[$posi]*$multi;
-
-      }
-
-      $valid = ($valid*10)%11;
-
-      if ($valid == $cpf[$posi]){
-        // CPF inválido
-        return 'CPF inválido';
-      }
-      }
-
-      return 'CPF Válido';
+// FUNCTION PARA VALIDAR CPF
+function valida_cpf($cpf){
+  // Valida se o CPF tem todos os caracteres
+  if (strlen($cpf)!=11){
+    return 'CPF com tamanho inválido';
   }
+
+  // Cálculo de CPF
+  // $qntd é a quantidade de carcacteres do CPF que serão validados
+  // $valid é o resultado do cálculo para a validação
+  // $posi é a posição do carcacteres do CPF que será incluído no cálculo
+  // $multi é o valor que está sendo multiplicado pelo carcacter do CPF incluído
+  for($qntd = 10;$qntd<=11;$qntd++){
+  
+    for ($valid=0,$multi = $qntd,$posi = 0;$multi > 1 ;$multi--,$posi++){
+    
+      $valid += $cpf[$posi]*$multi;
+    
+    }
+  
+    $valid = ($valid*10)%11;
+  
+    if ($valid == $cpf[$posi]){
+      // CPF inválido
+      return 'CPF inválido';
+    }
+    }
+  
+    return 'CPF Válido';
+}
 
   // VALIDAÇÃO SE A SESSÃO ESTÁ ABERTA OU NÃO
   function valida_sessao(){
